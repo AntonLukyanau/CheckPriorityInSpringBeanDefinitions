@@ -1,12 +1,10 @@
 package pack;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+//@Configuration
 public class Config {
 
-    public MyBean myBeanConfig() {
-        return new MyBean("from", "config");
-    }
 
 }

@@ -14,11 +14,11 @@
     <context:component-scan base-package="pack"/>
     <mvc:annotation-driven/>
 
-    <bean id="myBean" scope="prototype" class="pack.MyBean">
-        <constructor-arg value="xml"/>
-    </bean>
-    <bean id="beanWithFieldsXml" class="pack.BeanWithFields">
-        <constructor-arg ref="myBean"/>
-    </bean>
+<!--    <bean id="myBean" class="pack.MyBeanImplImpl">-->
+<!--        <constructor-arg value="xml"/>-->
+<!--    </bean>-->
+<!--    <bean id="beanWithFieldsXml" class="pack.BeanWithFields">-->
+<!--        <constructor-arg ref="myBean"/>-->
+<!--    </bean>-->
 
 </beans>

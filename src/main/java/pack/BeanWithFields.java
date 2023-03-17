@@ -1,15 +1,20 @@
 package pack;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Bean;
 
-@Component
+//@Component
 public class BeanWithFields {
 
     private MyBean myBean;
 
-    @Autowired
+    //@Autowired
     public BeanWithFields(MyBean myBean) {
         this.myBean = myBean;
     }
+
+    @Bean
+    public MyBeanImpl myBeanLightWeight() {
+        return new MyBeanImpl("config light weight");
+    }
+
 }
