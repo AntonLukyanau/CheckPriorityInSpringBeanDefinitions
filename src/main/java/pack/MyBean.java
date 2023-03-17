@@ -3,7 +3,8 @@ package pack;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-
+@Component
+@Scope("prototype")
 public class MyBean {
     private String field;
     private String secondValue;
@@ -11,6 +12,7 @@ public class MyBean {
     public MyBean() {
         field = "annotation";
     }
+
     public MyBean(String value) {
         field = value;
     }
